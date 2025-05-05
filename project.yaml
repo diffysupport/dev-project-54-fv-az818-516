@@ -1,0 +1,34 @@
+basic:
+    name: 'Demo test project'
+    breakpoints:
+        - 640
+        - 1024
+        - 1200
+    pages:
+        - 'https://bbc.com'
+        - 'https://point.md'
+    monitoring:
+        days: {  }
+        type: daily
+        schedule_time: '01:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: ''
+    delay: 10
+    scroll: false
+    headers:
+        - { value: '', header: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
